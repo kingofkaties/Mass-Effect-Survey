@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
+body {
+    background-image: url(https://www.newstatesman.com/sites/default/files/styles/cropped_article_image/public/blogs_2017/03/mass-effect-3-female-shepard-cover-wallpaper-4.jpg?itok=NkwYRtm5);
+    background-size: cover;
+    font-family: "Titillium Web"
+}
+
+p, label {
+    color: white;
+    font-family: "Titillium Web";
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px orangered;
+    font-weight: bold;
+}
+
+::placeholder {
+    font-family: "Titillium Web"
+}
+
+button {
+    background-image: linear-gradient(90deg, red, orange, white, deepskyblue);
+    font-family: "Titillium Web";
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#name, #email {
+    width: 100%;
+}
+
+.form {
+    display: block;
+    max-width: 60vh;
+    background-color: rgba(0,0,0,0.6);
+    padding: 3vh 5vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.item1 {
+    grid-area: 1/1/2/4;
+}
+
+.item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15, .item16, .item17 {
+    font-size: 13px;
+}
+
+button, textarea {
+    padding: 5px;
+    width: 100%;
+}

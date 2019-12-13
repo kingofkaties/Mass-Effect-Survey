@@ -1,0 +1,92 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mass Effect Survey</title>
+  <link href="index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="form">
+        <h1 id="title">Mass Effect Survey</h1>
+        <p>I'm Commander Shepard, and this is my favourite webpage on the citadel.</p>
+    <form action="post" id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <br>
+        <br>
+        <label for="email" id="email-label">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <br>
+        <br>
+        <label for="favourite-game" id="number-label">Best game in the trilogy:</label>
+        <input type="number" id="favourite-game" min="1" max="3" id="number" placeholder="1-3">
+        <br>
+        <br>
+        <label for="dropdown">Favourite squadmate:</label>
+        <select id="dropdown">
+            <option value="Ashley">Ashley</option>
+            <option value="Kaidan">Kaidan</option>
+            <option value="Wrex">Wrex</option>
+            <option value="Tali">Tali</option>
+            <option value="Garrus">Garrus</option>
+            <option value="Liara">Liara</option>
+            <option value="Jack">Jack</option>
+            <option value="Samara">Samara</option>
+            <option value="Grunt">Grunt</option>
+            <option value="Morinth">Morinth</option>
+            <option value="Legion">Legion</option>
+            <option value="Mordin">Mordin</option>
+            <option value="Jacob">Jacob</option>
+            <option value="Thane">Thane</option>
+            <option value="Miranda">Miranda</option>
+            <option value="James">James</option>
+            <option value="EDI">EDI</option>
+        </select>
+        <div class="sacrifice"><p>Did you sacrifice <input type="radio" id="kaidan" name="kaidan-or-ashely">
+            <label for="kaidan">Kaidan</label> or <input type="radio" id="ashley" name="kaidan-or-ashely">
+            <label for="ashley">Ashley</label>?</p>            
+        </div>
+        <div class="container">
+            <p class="item1">Which characters did you hoinky-doink with?</p>
+            <label class="item2" for="Diana Allers"><input id="Diana Allers" name="romance" type="checkbox" value="Diana Allers">Diana Allers</label>
+            <label class="item3" for="Kelly Chambers"><input id="Kelly Chambers" name="romance" type="checkbox" value="Kelly Chambers">Kelly Chambers</label>
+            <label class="item4" for="James Vega"><input id="James Vega" name="romance" type="checkbox" value="James Vega">James Vega</label>
+            <label class="item5" for="Sha'ira"><input id="Sha'ira" name="romance" type="checkbox" value="Sha'ira">Sha'ira</label>
+            <label class="item6" for="Thane Krios"><input id="Thane Krios" name="romance" type="checkbox" value="Thane Krios">Thane Krios</label>
+            <label class="item7" for="Miranda Lawson"><input id="Miranda Lawson" name="romance" type="checkbox" value="Miranda Lawson">Miranda Lawson</label>
+            <label class="item8" for="Jacob Taylor"><input id="Jacob Taylor" name="romance" type="checkbox" value="Jacob Taylor">Jacob Taylor</label>
+            <label class="item9" for="Kaidan Alenko"><input id="Kaidan Alenko" name="romance" type="checkbox" value="Kaidan Alenko">Kaidan Alenko</label>
+            <label class="item10" for="Ashley Williams"><input id="Ashley Williams" name="romance" type="checkbox" value="Ashley Williams">Ashley Williams</label>
+            <label class="item11" for="Jack"><input id="Jack" name="romance" type="checkbox" value="Jack">Jack</label>
+            <label class="item12" for="Morinth"><input id="Morinth" name="romance" type="checkbox" value="Morinth">Morinth</label>
+            <label class="item13" for="Tali'Zorah"><input id="Tali'Zorah" name="romance" type="checkbox" value="Tali'Zorah">Tali'Zorah</label>
+            <label class="item14" for="Samantha Traynor"><input id="Samantha Traynor" name="romance" type="checkbox" value="Samantha Traynor">Samantha Traynor</label>
+            <label class="item15" for="Garrus Vakarian"><input id="Garrus Vakarian" name="romance" type="checkbox" value="Garrus Vakarian">Garrus Vakarian</label>
+            <label class="item16" for="Steve Cortez"><input id="Steve Cortez" name="romance" type="checkbox" value="Steve Cortez">Steve Cortez</label>
+            <label class="item17" for="Liara T'Soni"><input id="Liara T'Soni" name="romance" type="checkbox" value="Liara T'Soni">Liara T'Soni</label>
+        </div>
+        <br>
+        <label for="textarea">Tell us one thing you liked about Andromeda.</label>
+        <textarea placeholder="Come on, you can think of something." required></textarea>
+        <br><br>
+        <button type="submit" id="submit">Transmit Data</button>
+  </form>
+</div>
+</body>
+</html>
